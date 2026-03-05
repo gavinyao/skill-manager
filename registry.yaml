@@ -1,0 +1,21 @@
+skills:
+  - name: skill-creator
+    description: 创建和改进 Claude Code skills
+    source: npx
+    install: "npx skills add anthropics/skills@skill-creator -y -g"
+
+  - name: find-skills
+    description: 从 skills.sh 生态搜索和安装 skills
+    source: npx
+    install: "npx skills add vercel-labs/skills@find-skills -y -g"
+
+  - name: wechat-article-collector
+    description: 采集微信公众号文章
+    source: local
+    install: "$HOME/develop/agent-skills/wechat-article-collector"
+    depends: [skill-creator, wechat-article-search]
+
+  - name: wechat-article-search
+    description: 搜索微信公众号文章
+    source: npx
+    install: "npx skills add wuchubuzai2018/expert-skills-hub@wechat-article-search -y -g"
