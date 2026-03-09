@@ -1,4 +1,4 @@
-# Skill Manager
+# Skill Registry
 
 一个 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill，用于管理和安装其他 Claude Code skills。
 
@@ -19,13 +19,13 @@
 
 ```bash
 # 通过 npx 安装（推荐）
-cd ~/.claude/skills && npx skills add gavinyao/skill-manager -y -g
+cd ~/.claude/skills && npx skills add gavinyao/skill-registry -y -g
 
 # 或手动复制
-cp -r . ~/.claude/skills/skill-manager
+cp -r . ~/.claude/skills/skill-registry
 
 # 或使用符号链接
-ln -s $(pwd) ~/.claude/skills/skill-manager
+ln -s $(pwd) ~/.claude/skills/skill-registry
 ```
 
 ## 使用
@@ -100,7 +100,7 @@ skills:
 通过订阅机制，可以构建分层的注册表结构，实现多机器共享和本机定制：
 
 ```
-skill-manager/registry.yaml          ← 入口
+skill-registry/registry.yaml          ← 入口
 ├── shared-registry                   ← 多机器共享注册表（通过 dotfiles 同步）
 │   ├── skill-creator
 │   ├── find-skills
