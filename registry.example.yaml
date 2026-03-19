@@ -7,17 +7,17 @@
 # 订阅：引用其他注册表（支持递归、嵌套）
 # ──────────────────────────────────────────────
 subscriptions:
-  # 远程注册表
-  - name: official
-    url: https://example.com/skills-registry.yaml
+  # awesome-skills：社区精选 skills 合集（默认订阅）
+  - name: awesome
+    url: https://raw.githubusercontent.com/gavinyao/awesome-skills/main/registry.yaml
 
   # 本地注册表（支持环境变量和 ~ 展开）
-  - name: team-shared
-    url: $HOME/shared-skills/registry.yaml
+  # - name: team-shared
+  #   url: $HOME/shared-skills/registry.yaml
 
   # 相对路径（基于本文件所在目录解析）
-  - name: local-extra
-    url: ./extra-registry.yaml
+  # - name: local-extra
+  #   url: ./extra-registry.yaml
 
 # ──────────────────────────────────────────────
 # Skills 列表

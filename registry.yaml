@@ -1,9 +1,7 @@
 # 订阅注册表
-subscriptions: []
-  # - name: official
-  #   url: https://example.com/skills-registry.yaml
-  # - name: team-shared
-  #   url: $HOME/shared-skills/registry.yaml
+subscriptions:
+  - name: awesome
+    url: https://raw.githubusercontent.com/gavinyao/awesome-skills/main/registry.yaml
 
 # 本地 skills
 skills:
